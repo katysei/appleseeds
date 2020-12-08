@@ -4,8 +4,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         .show-white-space {
+    white-space: pre-wrap;
+}
+        body {
+            font-size:xx-small;
+            color: white;
+            font-family:  'Arial (Hebrew)';
+            font-weight: 5;
+            margin: 0;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            height: 100vh;               
+            width: 86%;
+            position:relative;
+            
+
+
+
+        }
+        .header ,.footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color:rgb(0, 148, 216);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 0px;
+
+        }
+        .header {
+            background-color:rgb(0, 148, 216);
+            padding-right:40px ;
+            padding-left: 40px;
+
+            position:absolute;
+            bottom: 0%;
+        }
+        .footer {
+            padding-top:10px;
+            padding-bottom: 10px;
+            position: sticky;
+            bottom: 0;
+        }
+       
+         * {
+             direction: rtl;
+             text-align: right;
+             font-size: xx-small;
+             font-family: 'Arial (Hebrew)';
+             font-weight: 1;
+         }
+         .images1 ,.images2{
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;          
+
+
+         }
+        
+         
+         .pic{
+             display: flex;
+             flex: auto;
+             width :25%;
+             padding: 10px;
+             position: relative;;
+             justify-content: center;
+         }
+         .images2 img{
+             display: flex;
+             flex: auto;
+             width :25%;
+             padding: 10px;
+             position: relative;;
+         }
+         .pic  img {
+
+            display: flex;
+            width:100%;
+            z-index: 1;
+         }
+         .pic >.cap1{
+             
+             position: absolute;
+
+             flex-wrap: wrap;
+             background-color: rgba(238,174,202,0.5);
+             z-index: 999;
+             bottom :0;
+             margin: 15px;
+         }
+
+         
+         .nav {
+             display: flex;
+             flex-direction: column;
+             margin-left: 10px;
+             margin-right: 10px;
+             background-color:rgb(235, 196, 69);
+             background: linear-gradient(0deg, rgb(235, 183, 69) 0%, (235, 196, 69) 100%);
+
+         }
+         
+         
+         
+        .footer a {
+            color: white;
+        }
+
+         ul{
+        padding: 0%;
+        justify-content: space-evenly;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin-right: 0;  
+
+        
+
+
+
+         }
+    ul li{
+        display: flex;
+        list-style: none;
+        position: relative;
+
+
+
+    }
+    ul li a{
+        display: flex;
+        color:white;
+        text-decoration: none;
+        white-space: nowrap;
+
+
+    }
+    ul li a:hover{
+        color: white;
+        background: #740f0f;
+    }
+    ul li ul.dropdown{
+        background:blue;
+        display: none;
+        position: absolute;
+        z-index: 999;
+    }
+    ul li:hover ul.dropdown{
+        display: flex;	/* Display the dropdown */
+        flex-direction: column;
+    }
+    ul li ul.dropdown li{
+        display: inline-block;
+        direction: rtl;
+        text-align: right;
+
+    }
+        
+    </style>
 </head>
+
 <body>
+    <div class="content">
+        <div class= "nav">
+            <ul>
+                <li><a href="#">&#9662;אודות</a>
+                    <ul class="dropdown">
+                        <li><a href="contact.html">צור קשר</a></li>
+                        <li><a href="contact.html">צור קשר</a></li>
+
+                    </ul>
+                
+                </li>
+                <li><a href="#">חטיבות</a></li>
+                <li>
+                    <a href="#">אחריות תאגידית</a>
+                    
+                </li>
+                <li><a href="#">קשרי משקיעים</a></li>
+                <li><a href="#">התחנות שלנו</a></li>
+                <li><a href="#">קריירה</a></li>
+
+
+            </ul>
+        </div>
+        
+        <div class = "images1">
+            <div class = "pic">
+                <div class= "cap1 show-white-space">     
+קמעונאות ומסחר
+במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית,
+הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות.
+קרא עוד
+                  </div>
+                <img src = "1908364606615453350.JPG">
+            </div>
+            <div class = "pic show-white-space">
+                <div class= "cap1">     
+זיקוק
+פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז.
+החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט...
+קרא עוד
+                  </div>
+
+            <img src="Picture-046410251500.jpg">
+            </div>
+            <div class = "pic ">
+                <div class= "cap1 show-white-space">     
+תעשיות ושירותים
+תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...
+קרא עוד
+                  </div>
+
+            <img src = "פזקר_-291_354410564000.jpg">
+            </div>
+            
+        </div>
+
+       
+        <div class = "images2">
+            <img src = "250X110668568400.jpg">
+            <img src= "paz_250x110059890678.jpg">
+            <img src = "paz_250x110103131473.jpg">
+        </div>
+         
+         <div class = "footer">
+            <a href="scratch.html"> 
+                צור קשר
+            </a>
+            <a href="contact.html"> 
+                 עמוד הבית
+            </a>
+            <a href="contact.html"> 
+                 מחירונים
+            </a>
+            <a href="contact.html"> 
+                תנאי שימוש 
+            </a>
+            <a href="contact.html"> 
+                 נגישות
+            </a>
+            <a href="contact.html"> 
+                מפת אתר 
+            </a>
+            <a href="contact.html"> 
+                צור קשר
+            </a>
+            <a href="contact.html"> 
+                 שטחי מסחר
+            </a>
+        </div>
+        
+
+    </div>
+    
     
 </body>
 </html>
