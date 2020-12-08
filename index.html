@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+             direction: rtl;
+             text-align: right;
+             font-size: xx-small;
+             font-family: 'Arial (Hebrew)';
+             font-weight: 1;
+         }
          .show-white-space {
-    white-space: pre-wrap;
-}
+
+             
+                 white-space: pre-wrap;
+        }
         body {
             font-size:xx-small;
             color: white;
@@ -22,12 +31,20 @@
             height: 100vh;               
             width: 86%;
             position:relative;
-            
-
 
 
         }
-        .header ,.footer{
+        .nav {
+             display: flex;
+             flex-direction: column;
+             margin-left: 10px;
+             margin-right: 10px;
+             background-color:rgb(235, 196, 69);
+             background: linear-gradient(0deg, rgb(235, 183, 69) 0%, (235, 196, 69) 100%);
+
+         }
+         
+        .footer{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -37,30 +54,17 @@
             margin-right: 10px;
             margin-left: 10px;
             margin-bottom: 0px;
-
-        }
-        .header {
-            background-color:rgb(0, 148, 216);
-            padding-right:40px ;
-            padding-left: 40px;
-
-            position:absolute;
-            bottom: 0%;
-        }
-        .footer {
             padding-top:10px;
             padding-bottom: 10px;
             position: sticky;
             bottom: 0;
+
         }
+        
        
-         * {
-             direction: rtl;
-             text-align: right;
-             font-size: xx-small;
-             font-family: 'Arial (Hebrew)';
-             font-weight: 1;
-         }
+        .footer a {
+            color: white;
+        }
          .images1 ,.images2{
              display: flex;
              flex-direction: row;
@@ -68,7 +72,6 @@
 
 
          }
-        
          
          .pic{
              display: flex;
@@ -91,10 +94,9 @@
             width:100%;
             z-index: 1;
          }
-         .pic >.cap1{
+         .pic >.cap{
              
              position: absolute;
-
              flex-wrap: wrap;
              background-color: rgba(238,174,202,0.5);
              z-index: 999;
@@ -103,21 +105,10 @@
          }
 
          
-         .nav {
-             display: flex;
-             flex-direction: column;
-             margin-left: 10px;
-             margin-right: 10px;
-             background-color:rgb(235, 196, 69);
-             background: linear-gradient(0deg, rgb(235, 183, 69) 0%, (235, 196, 69) 100%);
-
-         }
+        
          
          
-         
-        .footer a {
-            color: white;
-        }
+       
 
          ul{
         padding: 0%;
@@ -179,7 +170,11 @@
                 <li><a href="#">&#9662;אודות</a>
                     <ul class="dropdown">
                         <li><a href="contact.html">צור קשר</a></li>
-                        <li><a href="contact.html">צור קשר</a></li>
+                        <li><a href="contact.html">הסטוריה</a></li>
+                        <li><a href="contact.html">חזון וערכים</a></li>
+                        <li><a href="contact.html">מבנה הדירקטוריון</a></li>
+                        <li><a href="contact.html">הנהלת הקבוצה</a></li>
+                        <li><a href="contact.html">פרסים והערכה</a></li>
 
                     </ul>
                 
@@ -199,7 +194,7 @@
         
         <div class = "images1">
             <div class = "pic">
-                <div class= "cap1 show-white-space">     
+                <div class= "cap show-white-space">     
 קמעונאות ומסחר
 במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית,
 הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות.
@@ -208,7 +203,7 @@
                 <img src = "1908364606615453350.JPG">
             </div>
             <div class = "pic show-white-space">
-                <div class= "cap1">     
+                <div class= "cap">     
 זיקוק
 פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז.
 החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט...
@@ -218,7 +213,7 @@
             <img src="Picture-046410251500.jpg">
             </div>
             <div class = "pic ">
-                <div class= "cap1 show-white-space">     
+                <div class= "cap show-white-space">     
 תעשיות ושירותים
 תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...
 קרא עוד
